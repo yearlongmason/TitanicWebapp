@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[53]:
-
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -24,9 +18,6 @@ with col1:
     st.pyplot(fig)
 
 
-# In[54]:
-
-
 fig, ax = plt.subplots(figsize=(7,5))
 ax.hist(data['Age'], color='tab:purple', linewidth=1, edgecolor='Black')
 ax.set_title('Passenger Age')
@@ -35,13 +26,9 @@ with col2:
     st.pyplot(fig)
 
 
-# In[55]:
-
-
 fig, ax = plt.subplots(figsize=(7,5))
 sns.violinplot(data=data, x='Pclass', y='Age', ax=ax)
 ax.set_title('Passenger Age by class')
 
 with col3:
     st.pyplot(fig)
-
